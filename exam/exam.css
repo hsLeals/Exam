@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: purple;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.form {
+  position: absolute;
+  top: 100px;
+  left: 550px;
+  width: 450px;
+  padding: 50px 0;
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  text-align: center;
+  /* display: none; */
+}
+
+.form p {
+  margin-top: 20px;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 60px;
+}
+
+.form button {
+  margin: auto;
+  display: block;
+  margin-top: 50px;
+  width: 100px;
+  height: 40px;
+  border-radius: 3cm;
+  font-size: 17px;
+  color: white;
+  background: rgba(255, 255, 255, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.575);
+}
+
+.form input {
+  width: 80%;
+  height: 50px;
+  display: block;
+  margin: auto;
+  border: none;
+  outline: none;
+  margin-top: 20px;
+  border-radius: 3cm;
+  padding-left: 20px;
+  background: rgba(255, 255, 255, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  caret-color: white;
+  color: white;
+}
+
+.form a {
+  text-decoration: none;
+  display: block;
+  margin-top: 50px;
+  font-size: 20px;
+  color: white;
+}
+
+.form i {
+  position: absolute;
+  bottom: 228px;
+  right: 70px;
+}
+
+.clock{
+  width: 70px;
+  /* display: flex; */
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+}
+.clock p{
+  font-size: 23px;
+  display: inline-block;
+}
+
+.exam{
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  color: white;
+  width: 70%;
+  height: 400px;
+  position: absolute;
+  top: 150px;
+  left: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+.questions{
+  width: 55%;
+  height: 100%;
+  filter: blur(5px);
+}
+.info{
+  width: 45%;
+  height: 100%;
+  padding: 20px 20px;
+  border-left: 2px solid white;
+}
+
+.time{
+  font-size: 25px;
+  display: inline-block;
+}
+
+.minimum{
+  font-size: 20px;
+  color: gold;
+  display: block;
+  margin-top: 60px;
+}
+.fa-solid, .i{
+  font-size: 23px;
+  display: block;
+  margin-top: 40px;
+}
+.exam button{
+  width: 120px;
+  height: 40px;
+  border-radius: 3cm;
+  font-size: 17px;
+  color: white;
+  background: rgba(255, 255, 255, 0.39);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  transition: 0.3s;
+  margin: 60px 10px;
+}
+
+.sb:hover{
+  background-color: rgba(9, 255, 0, 0.39);
+}
+.exam button:last-child:hover{
+  background: rgba(255, 0, 0, 0.39);
+}
+
+.question{
+  width: 94%;
+  padding: 10px;
+  margin: 20px auto;
+  font-size: 20px;
+  display: block;
+background: rgba(255, 255, 255, 0.34);
+border-radius: 16px;
+box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+backdrop-filter: blur(4.4px);
+border: 1px solid rgba(255, 255, 255, 0.27);
+}
+
+.answers{
+  display: flex;
+  padding: 0 50px;
+  flex-wrap: wrap;
+}
+.answer{
+  width: 34%;
+  font-size: 20px;
+  margin: auto;
+  margin-bottom: 50px;
+  border-radius: 2cm;
+  padding-left: 15px;
+  padding: 5px 0 5px 15px;
+  background: rgba(255, 255, 255, 0.34);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+border: 1px solid rgba(255, 255, 255, 0.27);
+transition: 0.3s;
+}
+
+.answer:hover{
+box-shadow: 0 0px 30px rgba(255, 255, 255, 0.5);
+
+}
+
+.numbers{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.number{
+  font-size: 25px;
+  padding: 5px 15px;
+  border-radius: 100%;
+  border: 1px solid red;
+  background: rgba(0, 255, 0, 0.512);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+border: 1px solid rgba(255, 255, 255, 0.27);
+}
+.number:last-child{
+  padding: 5px 10px;
+}
+.exam i{
+  margin-left: 50px;
+  font-size: 30px;
+}
+.exam i:last-child{
+  margin-left: 430px;
+}
+
+.finish{
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12.8px);
+  width: 40%;
+  height: 250px;
+  position: absolute;
+  top: 150px;
+  left: 480px;
+  display: none;
+}
+
+.finish h1{
+  width: 14%;
+  margin: auto;
+  margin-top: 10px;
+  color: white;
+}
+
+.finish i{
+  display: block;
+  width: 81%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.finish span{
+  display: block;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+.ra{
+  color: rgba(0, 255, 0, 0.575) !important;
+}
+.wa{
+  color: rgba(223, 5, 5, 0.785) !important;
+}
+.uq{
+  color: rgba(255, 255, 255, 0.819) !important;
+}
+.finish span:last-child{
+  width: 50%;
+}
